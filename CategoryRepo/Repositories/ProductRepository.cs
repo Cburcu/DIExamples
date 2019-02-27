@@ -18,7 +18,7 @@ namespace CategoryRepo.Repositories
         public List<Product> GetProducts()
         {
             this._Logger.WriteLog("Ürünler listelendi!");
-
+            _DatabaseConnection.ConnectDatabase();
             return new List<Product>();
         }
     }

@@ -9,7 +9,7 @@ namespace CategoryRepo
         public override void Load()
         {
             Bind<ILogger>().To<DatabaseLogger>();
-            Bind<IDatabaseConnection>().To<SqlServerDataConnection>();
+            Bind<IDatabaseConnection>().To<MongoDatabaseConnection>();
         }
     }
 }
